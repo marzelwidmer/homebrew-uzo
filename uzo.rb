@@ -5,11 +5,11 @@
 class Uzo < Formula
   desc ""
   homepage "https://github.com/marzelwidmer/uzo"
-  version "0.0.0"
+  version "1.0.0"
 
   on_macos do
-    url "https://github.com/marzelwidmer/uzo/releases/download/0.0.0/uzo_0.0.0_darwin_all.tar.gz"
-    sha256 "a34d9c7ad4f309622b548dc928b7a04da9d93e8b1bddff45524190979cc11bea"
+    url "https://github.com/marzelwidmer/uzo/releases/download/1.0.0/uzo_1.0.0_darwin_all.tar.gz"
+    sha256 "85e22392ecc6cd03bd8fb345cc0e58a90ffca39b8652dda96f26d001a8e3728c"
 
     def install
       bin.install "uzo"
@@ -19,8 +19,8 @@ class Uzo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marzelwidmer/uzo/releases/download/0.0.0/uzo_0.0.0_linux_amd64.tar.gz"
-        sha256 "6363f1b8091e4c388d2f47f4c6eb8dd4e65b4115dd7d059a66ea3680c018ead8"
+        url "https://github.com/marzelwidmer/uzo/releases/download/1.0.0/uzo_1.0.0_linux_amd64.tar.gz"
+        sha256 "174b99c9b282480a405b2cac0ee0ba2f28351f6730b58a4b1c32bd5abb2167e6"
 
         def install
           bin.install "uzo"
@@ -29,8 +29,8 @@ class Uzo < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marzelwidmer/uzo/releases/download/0.0.0/uzo_0.0.0_linux_arm64.tar.gz"
-        sha256 "a80d4b841137c977ddfea489af65876c416aa2e1e8b9275c06909f860b5855f1"
+        url "https://github.com/marzelwidmer/uzo/releases/download/1.0.0/uzo_1.0.0_linux_arm64.tar.gz"
+        sha256 "c5bdf3b329938ff363a89b1f65f313452da504ef9d4a7aea8187f54cbb134dd3"
 
         def install
           bin.install "uzo"
